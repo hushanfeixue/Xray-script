@@ -304,7 +304,7 @@ function check_os() {
 
 function install_dependencies() {
   _info "正在下载相关依赖"
-  _install_update "ca-certificates openssl lsb-release curl wget jq tzdata"
+  _install_update "ca-certificates openssl redhat-lsb curl wget jq tzdata"
   case "$(_os)" in
   centos)
     _install_update "crontabs util-linux iproute procps-ng"
